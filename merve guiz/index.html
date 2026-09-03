@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Merve'yi Ne Kadar İyi Tanıyorsun?</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>❤️ Merve'yi Ne Kadar İyi Tanıyorsun? ❤️</h1>
+
+        <p class="aciklama">
+            Bakalım Merve hakkında ne kadar şey biliyorsun! 😏
+        </p>
+
+        <button id="baslaBtn" onclick="testeBasla()">
+            Teste Başla 💕
+        </button>
+
+        <div id="quiz" class="gizli">
+
+            <h2 id="soru"></h2>
+
+            <div id="cevaplar"></div>
+
+            <button id="sonrakiBtn" onclick="sonrakiSoru()">
+                Sonraki Soru ➜
+            </button>
+
+        </div>
+<input
+    type="text"
+    id="isim"
+    placeholder="Adını yaz 💕"
+>
+
+<br><br>
+
+        <div id="sonuc" class="gizli">
+
+            <h2>🎉 Test Bitti!</h2>
+
+            <p id="puan"></p>
+
+            <p id="mesaj"></p>
+
+            <button onclick="sayfayiYenile()">
+                Tekrar Dene 🔄
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
