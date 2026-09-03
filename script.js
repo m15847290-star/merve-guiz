@@ -1,103 +1,243 @@
 const sorular = [
     {
-        soru: "Merve'nin en sevdiği renk hangisidir? ❤️",
-        cevaplar: ["Pembe 💗", "Kırmızı ❤️", "Mavi 💙", "Mor 💜"],
-        dogruCevap: 1
+        soru: "Merve'nin doğum günü ne zaman? 🎂",
+        cevaplar: [
+            "14 Şubat",
+            "27 Aralık",
+            "5 Mayıs",
+            "19 Eylül"
+        ],
+        dogru: 1
+    },
+
+    {
+        soru: "Merve'nin en sevdiği renk hangisi? ❤️",
+        cevaplar: [
+            "Mavi",
+            "Pembe",
+            "Kırmızı",
+            "Mor"
+        ],
+        dogru: 2
     },
 
     {
         soru: "Merve hangi yemekleri sever? 🍝",
         cevaplar: [
-            "Pizza 🍕",
-            "Mantı ve makarna 🥟🍝",
-            "Hamburger 🍔",
-            "Sadece salata 🥗"
+            "Mantı ve makarna",
+            "Sadece pizza",
+            "Hamburger ve patates",
+            "Balık ve salata"
         ],
-        dogruCevap: 1
+        dogru: 0
     },
 
     {
-        soru: "Merve'nin en sevdiği hayvanlardan biri hangisidir? 🐶",
+        soru: "Merve'nin sevdiği hayvanlardan biri hangisi? 🐶",
         cevaplar: [
-            "Kedi 🐱",
-            "Tavşan 🐰",
-            "Köpek 🐶",
-            "At 🐴"
+            "Kedi",
+            "Köpek",
+            "Tavşan",
+            "At"
         ],
-        dogruCevap: 2
+        dogru: 1
     },
 
     {
-        soru: "Merve hangi hayvanı da çok sever? 🐦",
+        soru: "Merve başka hangi hayvanı sever? 🐦",
         cevaplar: [
-            "Muhabbet kuşu 🐦",
-            "Yılan 🐍",
-            "Kaplumbağa 🐢",
-            "Balık 🐠"
+            "Yılan",
+            "Timsah",
+            "Muhabbet kuşu",
+            "Örümcek"
         ],
-        dogruCevap: 0
+        dogru: 2
     },
 
     {
-        soru: "Merve'nin en sevdiği aktivitelerden biri hangisidir? 🏊‍♀️",
+        soru: "Merve'nin sevdiği aktivitelerden biri hangisi? 🏊‍♀️",
         cevaplar: [
-            "Futbol oynamak ⚽",
-            "Yüzmek 🏊‍♀️",
-            "Resim yapmak 🎨",
-            "Bisiklete binmek 🚲"
+            "Yüzmek",
+            "Futbol oynamak",
+            "Kayak yapmak",
+            "Resim yapmak"
         ],
-        dogruCevap: 1
+        dogru: 0
     },
 
     {
-        soru: "Merve müzik dinlerken ne yapmayı sever? 🎵",
+        soru: "Merve müzik dinlerken ne yapmayı sever? 🎧",
         cevaplar: [
-            "Şarkı ile yürümek 🎧🚶‍♀️",
-            "Uyumak 😴",
-            "Ders çalışmak 📚",
-            "Televizyon izlemek 📺"
+            "Uyumayı",
+            "Şarkı ile yürümeyi",
+            "Ders çalışmayı",
+            "Film izlemeyi"
         ],
-        dogruCevap: 0
+        dogru: 1
     },
 
     {
-        soru: "Merve'nin en sevdiği hayvanlar hangileridir? 🥰",
+        soru: "Merve'nin en sevdiği sanatçılar kimlerdir? 🎤",
         cevaplar: [
-            "Kedi ve tavşan 🐱🐰",
-            "Köpek ve muhabbet kuşu 🐶🐦",
-            "At ve balık 🐴🐠",
-            "Hamster ve kedi 🐹🐱"
+            "Motive ve UZI",
+            "Tarkan ve Sezen Aksu",
+            "Mabel Matiz ve Derya Uluğ",
+            "Edis ve Hadise"
         ],
-        dogruCevap: 1
+        dogru: 0
     },
 
     {
-        soru: "Merve'nin en sevdiği aktiviteler hangileridir? 💕",
+        soru: "Merve'nin sevdiği şarkılardan biri hangisidir? 🎵",
         cevaplar: [
-            "Yüzmek ve şarkı ile yürümek 🏊‍♀️🎵",
-            "Futbol ve basketbol ⚽🏀",
-            "Kitap okumak ve resim yapmak 📚🎨",
-            "Oyun oynamak ve film izlemek 🎮🎬"
+            "Romantik",
+            "Deli Gibi",
+            "Yalnızlık",
+            "Sonbahar"
         ],
-        dogruCevap: 0
+        dogru: 0
+    },
+
+    {
+        soru: "Merve'nin sevdiği diğer şarkı hangisidir? 🎶",
+        cevaplar: [
+            "BRAPAP",
+            "Fırtına",
+            "Geceler",
+            "Aşk"
+        ],
+        dogru: 0
+    },
+
+    {
+        soru: "Merve'nin en sevdiği tatlı hangisidir? 🍰",
+        cevaplar: [
+            "Sütlaç",
+            "Cheesecake",
+            "Yeşil baklava",
+            "Profiterol"
+        ],
+        dogru: 2
+    },
+
+    {
+        soru: "Merve'nin en sevdiği içecek hangisidir? 🥤",
+        cevaplar: [
+            "Kola",
+            "Ice Tea",
+            "Limonata",
+            "Meyve suyu"
+        ],
+        dogru: 1
+    },
+
+    {
+        soru: "Merve denizi mi yoksa havuzu mu sever? 🌊",
+        cevaplar: [
+            "Sadece denizi",
+            "Sadece havuzu",
+            "İkisini de",
+            "Hiçbirini"
+        ],
+        dogru: 2
+    },
+
+    {
+        soru: "Merve'nin en sevdiği dersler hangileridir? 💻",
+        cevaplar: [
+            "Matematik ve fizik",
+            "Türkçe ve tarih",
+            "Bilgisayar programlama ve grafik tasarım",
+            "Biyoloji ve kimya"
+        ],
+        dogru: 2
+    },
+
+    {
+        soru: "Merve'nin en sevdiği oyun hangisidir? 🎮",
+        cevaplar: [
+            "Minecraft",
+            "Roblox",
+            "Free Fire",
+            "PUBG"
+        ],
+        dogru: 2
+    },
+
+    {
+        soru: "Merve'nin en sevdiği dizi hangisidir? 📺",
+        cevaplar: [
+            "Wednesday",
+            "Seviyor Sevmiyor",
+            "Friends",
+            "Stranger Things"
+        ],
+        dogru: 1
+    },
+
+    {
+        soru: "Merve'nin en sevdiği çiçek hangisidir? 🌹",
+        cevaplar: [
+            "Lale",
+            "Papatya",
+            "Gül",
+            "Orkide"
+        ],
+        dogru: 2
+    },
+
+    {
+        soru: "Merve en çok hangi uygulamayı kullanır? 📱",
+        cevaplar: [
+            "TikTok",
+            "Instagram",
+            "YouTube",
+            "Pinterest"
+        ],
+        dogru: 1
+    },
+
+    {
+        soru: "Merve'nin gitmek istediği ülkeler hangileridir? ✈️",
+        cevaplar: [
+            "İtalya ve İspanya",
+            "Fransa ve Kore",
+            "İngiltere ve Almanya",
+            "Amerika ve Kanada"
+        ],
+        dogru: 1
+    },
+
+    {
+        soru: "Merve insanlarda hangi özellikleri önemser? 💕",
+        cevaplar: [
+            "Samimiyet, gerçekçilik ve açık sözlülük",
+            "Sadece dış görünüş",
+            "Sessiz ve içine kapanık olmak",
+            "Her şeye evet demek"
+        ],
+        dogru: 0
     }
 ];
 
 
 let mevcutSoru = 0;
 let puan = 0;
+let oyuncuAdi = "";
+let cevapVerildi = false;
 
+
+// TESTİ BAŞLAT
 function testeBasla() {
 
     oyuncuAdi = document.getElementById("isim").value.trim();
 
     if (oyuncuAdi === "") {
-        alert("Lütfen önce adını yaz ❤️");
+        alert("Önce adını yazmalısın ❤️");
         return;
     }
 
     document.getElementById("baslaBtn").style.display = "none";
-
     document.getElementById("isim").style.display = "none";
 
     document.getElementById("quiz").classList.remove("gizli");
@@ -106,14 +246,15 @@ function testeBasla() {
 }
 
 
-
-
-
+// SORUYU GÖSTER
 function soruyuGoster() {
+
+    cevapVerildi = false;
 
     const soru = sorular[mevcutSoru];
 
-    document.getElementById("soru").textContent = soru.soru;
+    document.getElementById("soru").textContent =
+        (mevcutSoru + 1) + ". " + soru.soru;
 
     const cevaplar = document.getElementById("cevaplar");
 
@@ -128,31 +269,59 @@ function soruyuGoster() {
         buton.classList.add("cevap");
 
         buton.onclick = function () {
-            cevapKontrol(index);
+            cevapKontrol(index, buton);
         };
 
         cevaplar.appendChild(buton);
     });
+
+    document.getElementById("sonrakiBtn").style.display = "none";
 }
 
 
-function cevapKontrol(secim) {
+// CEVABI KONTROL ET
+function cevapKontrol(secim, secilenButon) {
 
-    const dogru = sorular[mevcutSoru].dogruCevap;
+    if (cevapVerildi) {
+        return;
+    }
 
-    if (secim === dogru) {
+    cevapVerildi = true;
 
-        puan += 100 / sorular.length;
+    const dogruCevap = sorular[mevcutSoru].dogru;
 
-        alert("Doğru cevap! ❤️");
+    const butonlar = document.querySelectorAll(".cevap");
+
+    butonlar.forEach((buton, index) => {
+
+        buton.disabled = true;
+
+        if (index === dogruCevap) {
+            buton.style.backgroundColor = "#2ecc71";
+            buton.style.color = "white";
+        }
+    });
+
+
+    if (secim === dogruCevap) {
+
+        puan++;
+
+        secilenButon.style.backgroundColor = "#2ecc71";
 
     } else {
 
-        alert("Yanlış cevap! 😅");
+        secilenButon.style.backgroundColor = "#e74c3c";
+
+        alert("Yanlış cevap 😅");
     }
+
+
+    document.getElementById("sonrakiBtn").style.display = "inline-block";
 }
 
 
+// SONRAKİ SORU
 function sonrakiSoru() {
 
     mevcutSoru++;
@@ -168,40 +337,55 @@ function sonrakiSoru() {
 }
 
 
+// TESTİ BİTİR
 function testiBitir() {
 
     document.getElementById("quiz").classList.add("gizli");
 
     document.getElementById("sonuc").classList.remove("gizli");
 
-    const finalPuan = Math.round(puan);
+    const yuzde = Math.round(
+        (puan / sorular.length) * 100
+    );
+
 
     document.getElementById("puan").textContent =
-        "Puanın: " + finalPuan + " / 100";
+        oyuncuAdi + ", " + puan + "/" + sorular.length +
+        " doğru yaptın! (" + yuzde + "%)";
 
 
     let mesaj = "";
 
 
-    if (finalPuan <= 20) {
+    if (yuzde <= 20) {
 
-        mesaj = "Merve'yi tanımaya daha yeni başlamışsın 😂";
+        mesaj =
+            "Merve hakkında neredeyse hiçbir şey bilmiyorsun 😂";
 
-    } else if (finalPuan <= 40) {
+    } else if (yuzde <= 40) {
 
-        mesaj = "Biraz daha Merve çalışması yapmalısın 😅";
+        mesaj =
+            "Merve'yi biraz daha tanıman gerekiyor 😅";
 
-    } else if (finalPuan <= 60) {
+    } else if (yuzde <= 60) {
 
-        mesaj = "Fena değilsin! 👀";
+        mesaj =
+            "Fena değilsin! Merve hakkında bazı şeyleri biliyorsun 👀";
 
-    } else if (finalPuan <= 80) {
+    } else if (yuzde <= 80) {
 
-        mesaj = "Merve'yi bayağı iyi tanıyorsun! 💕";
+        mesaj =
+            "Merve'yi oldukça iyi tanıyorsun! 💕";
+
+    } else if (yuzde < 100) {
+
+        mesaj =
+            "Vay be! Merve'yi gerçekten çok iyi tanıyorsun! 😍";
 
     } else {
 
-        mesaj = "Vay be! Merve'yi gerçekten çok iyi tanıyorsun! 👑❤️";
+        mesaj =
+            "MERVE'NİN AKLINI OKUYORSUN! 👑❤️ 100/100!";
     }
 
 
@@ -209,8 +393,12 @@ function testiBitir() {
 }
 
 
+// TEKRAR OYNA
 function sayfayiYenile() {
 
     location.reload();
 
 }
+    
+
+ 
